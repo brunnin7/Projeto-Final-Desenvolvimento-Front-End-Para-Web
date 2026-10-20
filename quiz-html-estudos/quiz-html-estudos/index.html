@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c1427">
+  <meta name="description" content="Aprenda HTML com um quiz gratuito, explicações e referências para estudar.">
+  <title>TagLab | Quiz de HTML</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="TagLab - voltar ao início"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span> Tag<span>Lab</span></a>
+      <span class="header-badge"><span class="status-dot"></span> Seu espaço para aprender</span>
+    </header>
+    <main id="main-content">
+      <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="tiny-star">✦</span> APRENDA NA PRÁTICA</span>
+          <h1 id="welcome-title">Domine o <span>HTML</span>.<br>Uma pergunta de cada vez.</h1>
+          <p>Teste seus conhecimentos, descubra como as tags funcionam e aprenda com explicações rápidas após cada resposta.</p>
+          <div class="hero-actions"><button class="btn btn-primary" id="start-btn" type="button">Começar o quiz <span aria-hidden="true">→</span></button><span class="duration">◷ Aproximadamente 5 minutos</span></div>
+          <div class="hero-chips" aria-label="Características"><span>✓ Gratuito</span><span>✓ 10 perguntas</span><span>✓ Feedback imediato</span></div>
+        </div>
+        <div class="code-visual" aria-label="Ilustração de um documento HTML">
+          <div class="code-top"><div class="dots"><i></i><i></i><i></i></div><span>index.html</span><span class="code-top-symbol">⌘</span></div>
+          <div class="code-lines"><div><em>01</em> <span class="muted-code">&lt;!DOCTYPE html&gt;</span></div><div><em>02</em> <span class="pink">&lt;html</span> <span class="yellow">lang</span>=<span class="green">"pt-BR"</span><span class="pink">&gt;</span></div><div><em>03</em> &nbsp; <span class="pink">&lt;head&gt;</span></div><div><em>04</em> &nbsp; &nbsp; <span class="pink">&lt;title&gt;</span><span class="white">Meu futuro</span><span class="pink">&lt;/title&gt;</span></div><div><em>05</em> &nbsp; <span class="pink">&lt;/head&gt;</span></div><div><em>06</em> &nbsp; <span class="pink">&lt;body&gt;</span></div><div><em>07</em> &nbsp; &nbsp; <span class="pink">&lt;h1&gt;</span><span class="white">Olá, mundo!</span><span class="pink">&lt;/h1&gt;</span></div><div><em>08</em> &nbsp; &nbsp; <span class="pink">&lt;p&gt;</span><span class="white">Eu sei HTML.</span><span class="pink">&lt;/p&gt;</span></div><div><em>09</em> &nbsp; <span class="pink">&lt;/body&gt;</span></div><div><em>10</em> <span class="pink">&lt;/html&gt;</span></div></div>
+          <div class="visual-footer"><span class="status-dot"></span> Pronto para executar <span>HTML</span></div>
+        </div>
+      </section>
+      <section class="features" id="features" aria-label="Como funciona">
+        <article class="feature"><span class="feature-icon">⌘</span><div><h2>Aprenda fazendo</h2><p>Questões sobre tags, atributos e estrutura HTML.</p></div></article>
+        <article class="feature"><span class="feature-icon">◈</span><div><h2>Entenda os erros</h2><p>Veja a explicação da resposta e uma fonte de estudo.</p></div></article>
+        <article class="feature"><span class="feature-icon">◎</span><div><h2>Acompanhe seu nível</h2><p>Confira sua pontuação ao terminar o desafio.</p></div></article>
+      </section>
+      <section class="game-panel hidden" id="game" aria-labelledby="question" tabindex="-1">
+        <div class="game-header"><div><span class="eyebrow">DESAFIO HTML</span><h1 class="game-title">Coloque seus conhecimentos à prova</h1></div><span class="question-counter" id="question-counter">Pergunta 1 de 10</span></div>
+        <div class="progress-track" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress"><div id="progress-fill"></div></div>
+        <div class="question-card"><span class="question-label">PERGUNTA ATUAL</span><h2 id="question">Carregando pergunta...</h2></div>
+        <div class="answers" id="answers" role="group" aria-label="Alternativas da pergunta"></div>
+        <div class="feedback hidden" id="feedback" role="status" aria-live="polite"><div class="feedback-heading" id="feedback-heading"></div><p id="feedback-text"></p><a id="feedback-source" target="_blank" rel="noopener noreferrer">Consultar fonte <span aria-hidden="true">↗</span></a></div>
+        <div class="game-actions"><button class="btn btn-outline" type="button" id="exit-btn">Voltar ao início</button><button class="btn btn-primary" id="next-btn" type="button" disabled>Próxima pergunta <span aria-hidden="true">→</span></button></div>
+      </section>
+      <section class="results hidden" id="results" aria-labelledby="results-title" tabindex="-1"><span class="eyebrow">DESAFIO CONCLUÍDO</span><div class="results-icon" aria-hidden="true">✦</div><h1 id="results-title">Você chegou até o fim!</h1><p id="result-description">Confira como você foi no desafio.</p><div class="score-card"><strong id="final-score">0/10</strong><span>respostas corretas</span></div><div class="result-actions"><button class="btn btn-primary" id="restart-btn" type="button">Tentar novamente <span aria-hidden="true">↻</span></button><button class="btn btn-outline" id="home-btn" type="button">Ir para o início</button></div></section>
+      <section class="load-error hidden" id="load-error" role="alert"><h2>Não foi possível carregar as perguntas.</h2><p>Se você abriu o arquivo HTML diretamente, inicie um servidor local ou publique o projeto em um serviço HTTPS para carregar o arquivo perguntas.json.</p><button id="retry-btn" class="btn btn-primary" type="button">Tentar novamente</button></section>
+    </main>
+    <footer class="site-footer"><span>© <span id="year">2026</span> TagLab — Estudar é evoluir.</span><span>Feito para quem está começando na web <span aria-hidden="true">♥</span></span></footer>
+  </div>
+</body>
+</html>
