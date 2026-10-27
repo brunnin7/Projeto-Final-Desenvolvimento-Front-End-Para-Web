@@ -48,6 +48,6 @@ python -m http.server 8000
 
 Acesse `http://localhost:8000` no navegador.
 
-## Opção 2 :
+## Opção 3 :
 
 Acesse o link: https://quiz-htmltrabalhofinal.netlify.app
