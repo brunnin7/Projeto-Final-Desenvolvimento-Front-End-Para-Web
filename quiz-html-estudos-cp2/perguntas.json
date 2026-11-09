@@ -1,0 +1,72 @@
+[
+  {
+    "pergunta": "O que significa a sigla HTML?",
+    "alternativas": ["HyperText Markup Language", "HighText Machine Language", "Hyperlink and Text Markup Language", "Home Tool Markup Language"],
+    "resposta": 0,
+    "explicacao": "HTML significa HyperText Markup Language (Linguagem de Marcação de Hipertexto). Ele organiza a estrutura e o conteúdo das páginas web.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+  },
+  {
+    "pergunta": "Qual elemento HTML representa o título principal de uma página?",
+    "alternativas": ["<header>", "<h1>", "<title>", "<head>"],
+    "resposta": 1,
+    "explicacao": "O elemento <h1> é normalmente usado para o título principal visível do conteúdo. Já <title> define o título exibido na aba do navegador.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements"
+  },
+  {
+    "pergunta": "Qual tag é utilizada para criar um parágrafo?",
+    "alternativas": ["<paragraph>", "<text>", "<p>", "<span>"],
+    "resposta": 2,
+    "explicacao": "A tag <p> identifica um parágrafo. O elemento <span> é genérico e utilizado para trechos em linha.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p"
+  },
+  {
+    "pergunta": "Qual atributo da tag <a> define o endereço do link?",
+    "alternativas": ["src", "alt", "target", "href"],
+    "resposta": 3,
+    "explicacao": "O atributo href define o destino de um link criado com <a>.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a"
+  },
+  {
+    "pergunta": "Qual tag insere uma imagem em uma página HTML?",
+    "alternativas": ["<img>", "<picture-src>", "<image>", "<src>"],
+    "resposta": 0,
+    "explicacao": "O elemento <img> incorpora uma imagem. O atributo src indica seu arquivo ou endereço, e alt oferece uma descrição alternativa.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img"
+  },
+  {
+    "pergunta": "Em que parte do HTML fica o conteúdo principal visível da página?",
+    "alternativas": ["<meta>", "<body>", "<head>", "<!DOCTYPE html>"],
+    "resposta": 1,
+    "explicacao": "O elemento <body> contém o conteúdo apresentado na página, como textos, imagens e formulários.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/body"
+  },
+  {
+    "pergunta": "Qual elemento cria uma lista não ordenada?",
+    "alternativas": ["<ol>", "<li>", "<ul>", "<dl>"],
+    "resposta": 2,
+    "explicacao": "O elemento <ul> agrupa uma lista não ordenada, e cada item é representado por <li>. Para uma lista ordenada, usa-se <ol>.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul"
+  },
+  {
+    "pergunta": "Qual atributo fornece um texto alternativo para uma imagem?",
+    "alternativas": ["title", "name", "label", "alt"],
+    "resposta": 3,
+    "explicacao": "O atributo alt descreve a imagem quando ela não pode ser exibida e auxilia tecnologias assistivas. Em imagens decorativas, pode ser vazio.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img"
+  },
+  {
+    "pergunta": "Qual elemento semântico é indicado para o conteúdo de navegação?",
+    "alternativas": ["<nav>", "<section>", "<aside>", "<footer>"],
+    "resposta": 0,
+    "explicacao": "O elemento <nav> identifica uma seção que oferece links de navegação, como um menu principal.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/nav"
+  },
+  {
+    "pergunta": "Qual elemento é usado para associar um texto descritivo a um campo de formulário?",
+    "alternativas": ["<legend>", "<label>", "<caption>", "<summary>"],
+    "resposta": 1,
+    "explicacao": "O elemento <label> identifica o rótulo de um controle de formulário e pode ser associado a ele com o atributo for e o id do campo.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/label"
+  }
+]
