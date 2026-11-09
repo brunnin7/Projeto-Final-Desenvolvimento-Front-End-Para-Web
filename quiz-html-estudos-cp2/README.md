@@ -8,9 +8,13 @@ Tecnologia — fundamentos de HTML: estrutura de páginas, elementos, atributos,
 
 ## Integrantes
 
-- [Preencher nome do integrante 1]
-- [Preencher nome do integrante 2, se houver]
-
+- [Gustavo Santos de Oliveira]
+- [Bruno Agostinho de Souza]
+- [João Pedro Ribeiro Otreira]
+- [Isabela de Sena Alves]
+- [Ryan Oliveira Trigo Santos]
+- [Renan Oliveira Trigo Santos]
+  
 ## Funcionalidades do CP2
 
 - O jogador informa o nome antes de iniciar.
@@ -59,34 +63,7 @@ Depois acesse `http://localhost:8000`.
 
 ### Opção 3 — Publicação HTTPS
 
-Publique todos os arquivos da pasta em um serviço de hospedagem estática, como Netlify ou GitHub Pages.
-
-## Formato de `perguntas.json`
-
-Cada pergunta precisa conter:
-
-- `pergunta`: enunciado.
-- `alternativas`: exatamente quatro opções.
-- `resposta`: índice da opção correta, começando em zero.
-- `explicacao`: explicação apresentada depois da resposta.
-- `fonte`: endereço HTTPS para consulta.
-
-Exemplo:
-
-```json
-{
-  "pergunta": "O que significa a sigla HTML?",
-  "alternativas": [
-    "HyperText Markup Language",
-    "HighText Machine Language",
-    "Hyperlink and Text Markup Language",
-    "Home Tool Markup Language"
-  ],
-  "resposta": 0,
-  "explicacao": "HTML significa HyperText Markup Language.",
-  "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML"
-}
-```
+https://quiz-htmltrabalhofinal.netlify.app/
 
 ## Como o ranking funciona
 
@@ -110,15 +87,10 @@ O armazenamento é específico da aba/sessão do navegador. Fechar a aba encerra
 8. Faça uma partida inteira usando apenas `Tab` e `Enter` (os botões de alternativa também aceitam Espaço).
 9. Teste em uma largura de celular e confirme que não há rolagem horizontal.
 
-## Entrega CP2
 
-- Faça commits descritivos com a participação de todos os integrantes.
-- Publique o site com HTTPS.
-- Crie e envie a tag `cp2-entrega` no repositório:
 
 ```bash
 git tag cp2-entrega
 git push origin cp2-entrega
 ```
 
-Antes da entrega, preencha os nomes dos integrantes e confirme que a versão publicada corresponde à versão marcada pela tag.
