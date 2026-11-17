@@ -102,33 +102,6 @@ sessionStorage.setItem("ranking", JSON.stringify(ranking));
 
 Cada registro guarda o nome, a pontuação, o total de perguntas e a data da partida. O ranking é ordenado pela porcentagem de acertos e mantém no máximo 10 resultados. Como o armazenamento é de sessão, ele fica disponível enquanto a aba estiver aberta; fechar a sessão encerra esses dados. O botão **Jogar novamente** não limpa o ranking.
 
-## Checklist final do CP3
-
-- [ ] Abrir o site publicado em janela anônima e confirmar que é a versão CP3.
-- [ ] Iniciar uma partida com nome válido e testar a validação de nome curto.
-- [ ] Completar todas as 10 perguntas e conferir feedback, explicação e fonte em cada uma.
-- [ ] Conferir a pontuação final e a ordem do ranking.
-- [ ] Jogar novamente e confirmar que a partida anterior continua no ranking.
-- [ ] Conferir `Application → Session Storage → ranking` nas ferramentas do desenvolvedor.
-- [ ] Fazer uma partida usando somente teclado.
-- [ ] Testar em celular e desktop, sem rolagem horizontal.
-- [ ] Confirmar contraste, foco visível e leitura dos elementos com tecnologia assistiva.
-- [ ] Deixar o ranking limpo e o site aberto para a demonstração em aula.
-- [ ] Garantir que todos os integrantes saibam explicar o tema, o ranking e a parte do código que apresentarem.
-
-## Congelar a entrega no Git
-
-Depois de atualizar o repositório com esta pasta e concluir os testes, uma pessoa do grupo deve criar a tag no commit final da `main`:
-
-```bash
-git switch main
-git pull origin main
-git add quiz-html-estudos-cp3
-git commit -m "feat: finalizar TagLab para CP3"
-git push origin main
-git tag -a cp3-entrega -m "Entrega CP3: versão final"
-git push origin cp3-entrega
-```
 
 A tag deve ser criada **depois** do último commit e do push da versão final. Se o Netlify estiver conectado à `main`, confirme que a publicação terminou e que o site no ar corresponde ao conteúdo marcado pela tag.
 
